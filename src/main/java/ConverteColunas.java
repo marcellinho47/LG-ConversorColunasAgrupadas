@@ -21,7 +21,6 @@ public class ConverteColunas {
       StringBuilder sb = new StringBuilder();
 
       // Lendo arquivo de origem
-
       File fileArqCompleto = new File(Utilitario.diretorioLocal() + File.separator + "origem.txt");
       String strArqCompleto = Files.readString(fileArqCompleto.toPath());
 
