@@ -1,9 +1,4 @@
-/.idea/compiler.xml
-/.idea/jarRepositories.xml
-.idea/encodings.xml
-.idea/misc.xml
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/google-java-format.xml
-.idea/vcs.xml
+/META-INF/*
+/.idea/*
+/target/*
+/ConversorColunasAgrupadas.iml
