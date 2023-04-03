@@ -13,7 +13,7 @@ public class FilesService {
 
     File folder = new File(localDirectory());
     File[] files = folder.listFiles();
-    return Arrays.stream(files).filter(File::isFile).toList();
+    return Arrays.stream(files).filter(File::isFile).sorted().toList();
   }
 
   public File createConvertedFile(File file) throws IOException {

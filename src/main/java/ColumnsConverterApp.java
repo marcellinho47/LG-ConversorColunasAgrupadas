@@ -28,7 +28,7 @@ public class ColumnsConverterApp {
           continue;
         }
 
-        System.out.println(originalFile.getName() + "\n");
+        System.out.println("\nConvertendo: " + originalFile.getName() + "\n");
 
         final String originalContent = filesService.readContentOfFile(originalFile);
         final String convertedContent =
