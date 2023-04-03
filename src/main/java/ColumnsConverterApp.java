@@ -21,9 +21,14 @@ public class ColumnsConverterApp {
 
       for (File originalFile : files) {
 
-        if (originalFile.getName().contains("git") || originalFile.getName().contains("pom")) {
+        if (originalFile.getName().contains("git")
+            || originalFile.getName().contains("pom")
+            || originalFile.getName().contains(".jar")
+            || originalFile.getName().contains(".bat")) {
           continue;
         }
+
+        System.out.println(originalFile.getName() + "\n");
 
         final String originalContent = filesService.readContentOfFile(originalFile);
         final String convertedContent =
